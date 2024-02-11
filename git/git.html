@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peaksoft GIT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      #root {
+        background: url("https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1131069/regular_1708x683_cover-default-cover-7-806a3e10c41a2213d7efc6d9e1034d62.png")
+          center center/cover no-repeat;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <h1 style="color: white; text-align: center">Git</h1>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">
+            Git жүктөп алуу
+            <a target="_blank" href="https://git-scm.com/downloads"
+              >Жүктөө шилтемеси</a
+            >
+          </li>
+        </ol>
+
+        <ol class="list-group list-group-numbered mt-5">
+          <li class="list-group-item">
+            Буйрук сабын ачуу
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Буйрук сабы"
+              data-bs-content="Бул колдонуучу тексттик буйруктарды колдонуу менен операциялык система менен иштеше ала турган интерфейс!"
+            >
+              Маалымат
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Командная строка (или терминал)"
+              data-bs-content="Это интерфейс, через который пользователь может взаимодействовать с операционной системой с помощью текстовых команд! "
+            >
+              Информация
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Ачылыш ыкмалары"
+              data-bs-content="Windows'та буйрук сабын ачуу үчүн, издөөнү колдонуп, cmd же Command Prompt терсеңиз болот. macOS'то терминалды Утилиталар астындагы Тиркемелер папкасынан тапса болот. Linux'та терминалды адатта менюдан тапса болот же Ctrl + Alt + T сыяктуу баскыч айкалышы аркылуу ишке киргизсе болот."
+            >
+              Ачуу жолу
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Способы открытия"
+              data-bs-content="Чтобы открыть командную строку в Windows, можно использовать поиск и ввести cmd, либо Командная строка. В macOS терминал можно найти в папке Программы в разделе Утилиты. В Linux терминал обычно можно найти в меню или запустить с помощью комбинации клавиш, таких как Ctrl + Alt + T"
+            >
+              Способы открытия
+            </button>
+          </li>
+          <li class="list-group-item">
+            Git орнотуу
+
+            <p class="border border-info p-2 mt-2">
+              git config --global user.name "Your Name"
+            </p>
+            <p class="border border-info p-2">
+              git config --global user.email "your.email@example.com"
+            </p>
+          </li>
+          <li class="list-group-item">
+            Репозиторий
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Репозиторий"
+              data-bs-content="Git терминдериндеги репозиторий (же репо) бул сиздин долбоордун файлдары жана өзгөртүүлөр тарыхы сакталган жер. Бул файл версияларын башкарууга жана башка иштеп чыгуучулар менен кызматташууга мүмкүндүк берген борбордук репозиторийди камсыз кылат."
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Репозиторий"
+              data-bs-content="Репозиторий (или репо) в терминах Git - это место, где хранятся файлы вашего проекта вместе с историей изменений. Он представляет собой центральное хранилище, которое позволяет управлять версиями файлов и сотрудничать с другими разработчиками. "
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            Репозиторий жергиликтүү же алыскы болушу мүмкүн <br />
+            | Репозиторий может быть локальным или удалённым
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Жергиликтүү"
+              data-bs-content="Бул сиздин жергиликтүү компьютериңизде жайгашкан репозиторийлер. Сиз аларды долбоор папкаңыздын ичиндеги git init буйругун колдонуп түзөсүз. Жергиликтүү репозиторийде долбооруңуздун бардык өзгөртүү таржымалы жана файлдары камтылган."
+            >
+              Жергиликтүү
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Жергиликтүү"
+              data-bs-content="Бул алыскы серверлерде жайгашкан репозиторийлер жана адатта иштеп чыгуучулардын ортосунда кызматташуу жана код алмашуу үчүн колдонулат."
+            >
+              Алыскы
+            </button>
+
+            ||
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Локальный"
+              data-bs-content="Это репозитории, которые расположены на вашем локальном компьютере. Вы создаете их с помощью команды git init внутри папки вашего проекта. Локальный репозиторий содержит всю историю изменений и файлы вашего проекта. "
+            >
+              Локальный
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Локальный"
+              data-bs-content="Это репозитории, которые находятся на удаленных серверах и обычно используются для совместной работы и обмена кодом между разработчиками. "
+            >
+              Удаленный
+            </button>
+          </li>
+          <li class="list-group-item">
+            Git init
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="git init"
+              data-bs-content="Эгер сиз Git аркылуу долбооруңузга өзгөртүүлөрдү байкоону баштагыңыз келсе, буйрук сабындагы долбоордун каталогуна барып, буйрукту аткарыңыз:"
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="git init"
+              data-bs-content=" Если вы хотите начать отслеживать изменения в своем проекте с использованием Git, перейдите в директорию вашего проекта в командной строке и выполните команду: git init"
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            Githubда каттоо
+            <a target="_blank" href="https://github.com/">Github</a>.
+            <span>Колдонуучу атыңызды жана паролуңузду унутпаңыз</span>
+          </li>
+          <li class="list-group-item">
+            Жаңы репозиторий ачыңыз <img src="./images/git-new.png" alt="new" />
+          </li>
+          <li class="list-group-item">
+            <span>git remote add origin (url репозитория)</span>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="Берилген url дареги боюнча жеткиликтүү алыскы репозиторий менен жергиликтүү репозиторийди туташтырат"
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="Соединяет локальный репозиторий с удалённым, доступным по данному url"
+            >
+              Информация
+            </button>
+
+            || <span style="color: red"> но ничего никуда не копируется</span>
+          </li>
+          <li class="list-group-item">
+            <span>origin</span>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="Гитте, origin сиздин алыскы репозиторийиңиз үчүн жөн гана лакап ат. Сиз git push origin (brach) же git pull origin (branch) сыяктуу буйруктарды аткарганда, баштапкы алыскы репозиторийиңиздин дарегин көрсөтөт. Бул алыскы репозиторийлер менен иштөөнү ыңгайлуу кылат, анткени ар дайым алыскы репозиторийдин URL дарегин киргизүүнүн кажети жок."
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="В Git origin просто является псевдонимом для вашего удаленного репозитория. Когда вы выполняете команды типа git push origin (branch) или git pull origin (branch), origin указывает на адрес вашего удаленного репозитория. Это делает работу с удаленными репозиториями более удобной, поскольку вам не нужно каждый раз вводить URL удаленного репозитория"
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            Эми башка адамдар, мисалы, сиздин командаңыздын мүчөлөрү, келечекте
+            сиз жаңы алыскы репозиторийге жүктөй турган кодду кантип жүктөй
+            алышат? || <br />
+            Теперь как другим людям ,например участникам вашей команды загрузить
+            тот код который в будущем загрузите в новый удаленный репозиторий ?
+            <br />
+            <br />
+            <p class="border border-info p-2 mt-2">
+              git clone (url удаленного репозитория) - скачивает все файлы из
+              удаленного репозитория, создававя вашу локальную копию этого
+              репозитория
+            </p>
+            <p class="border border-info p-2">
+              git clone (алыстагы репозиторийдин url) - алыскы репозиторийден
+              бардык файлдарды жүктөп алып, ошол репозиторийдин жергиликтүү
+              көчүрмөсүн түзөт
+            </p>
+          </li>
+          <li class="list-group-item">
+            git add
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content='git add - бул файлдарды "индекс" гитине кошуп, кийинки милдеттенмеге даярдайт. Git "индекс" - бул жасоого даяр болгон файлдардын репозиторийи'
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content='git add - подготавливает данные файлы к следующемукоммиту, добавляя их  в "идекс" гита. "Индекс" гита - это хранилище файлов, готовых к коммиту'
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            git commit
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="Gitте долбооруңузга учурдагы өзгөртүүлөрдү сактоо үчүн колдонулат.
+              Ар бир тапшырма сиз индекске кошкон өзгөртүүлөрдүн топтомун камтыйт
+              (милдеттүү үчүн даярдалган) git add, ошондой эле билдирүүнү колдонуу
+              эмне өзгөрдү."
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="git-commit в Git используется для сохранения текущих изменений в вашем проекте.
+              Каждый коммит содержит набор изменений, которые вы добавили в индекс
+              (подготовили для коммита) с помощью git add, а также сообщение о
+              том, что было изменено."
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            git push (имя_репозитория) (ветка)
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="git push - Сиздин жергиликтүү репозиторийиңизден анын берилген филиалында берилген аталышы менен алыскы бирине милдеттенмелерди жарыялайт"
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="git push - публикует коммиты из вашего локального репозитория в удаленный с данным именем в данной его ветке"
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            git pull (имя_репозитория) (ветка)
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="git pull - Берилген алыскы репозиторийден жүктөлүп алынгандардын баары жергиликтүү репозиторийде жок берилген филиалда аткарылат"
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="git pull - Скачивает из данного удаленного репозитория все коммиты в данной ветке , которых еще нет в локальном репозитории"
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">
+            branch
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Маалымат"
+              data-bs-content="Жөнөкөй сөз менен айтканда, Гиттеги филиал бул сиздин долбоордун жумушчу көчүрмөсу, анда сиз негизги версиядан көз карандысыз өзгөртүүлөрдү киргизе аласыз (көбүнчө мастер же негизги). Ар бир филиал өзүнүн өзгөртүүлөрдү сактайт жана жаңы функцияларды кошуу, мүчүлүштүктөрдү оңдоо же башка өзгөртүүлөрдү киргизүү үчүн колдонулушу мүмкүн. Филиалдар долбоорду уюштурууга жана ар кандай тапшырмаларды башкарууга жардам берет."
+            >
+              Маалымат
+            </button>
+            ||
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Информация"
+              data-bs-content="В простых словах, ветка (branch) в Git - это ваша рабочая копия проекта, в которой вы можете делать изменения независимо от основной версии (обычно это master или main). Каждая ветка хранит свои собственные изменения и может быть использована для добавления новых функций, исправления ошибок или любых других изменений. Ветки помогают организовывать работу и управлять различными задачами в проекте."
+            >
+              Информация
+            </button>
+          </li>
+          <li class="list-group-item">merge</li>
+        </ol>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
+</html>
